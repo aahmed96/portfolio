@@ -14,9 +14,9 @@ function Body () {
                             Adil Ahmed
                         </div>
                         
-                        <div className = "body-content">
+                        <h3 className = "body-content">
                             Software Engineer - AI & ML
-                        </div>
+                        </h3>
 
                         <div className = "body-icons">
                             <a href = "https://www.linkedin.com/in/adilahmed96/" target = "_blank" rel = "nonrefferer" className = "icon-link"><i><FaLinkedin /></i></a>
