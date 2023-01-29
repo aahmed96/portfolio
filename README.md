@@ -10,7 +10,7 @@ My personal website built using React
   d. Medical Website (need to make this first)
   e. Euro 2020 prediction game 
   
-2. Music Production
+2. Music Production - have small clips of your music play
 
 3. Reading Lists
 
