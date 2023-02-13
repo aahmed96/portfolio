@@ -1,18 +1,59 @@
 // The header component of my website 
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { useState, useEffect } from "react";
+
+//we create a useState function to highlight what page we are on! 
 
 function Header () {
-    return (
-        <div className="header">
-            <div className = "header-logo">
-                <a href = '#app'><h3  className="header-name">Adil Ahmed</h3 ></a>
-            </div>
+    const [activeLink, setActiveLink] = useState('About');
+    const [scrolled, setScrolled] = useState(false);
 
-            <div className = "header-container">
-                <div className="nav-item"><a href="#about">About</a></div>
-                <div className="nav-item"><a href="#projects">Projects</a></div>
-                <div className="nav-item"><a href="#skills">Skills</a></div>
-            </div>
-        </div>
+    //function for checking scroll
+    useEffect(() => {
+        const onScroll = () => {
+        if (window.scrollY > 50) {
+            setScrolled(true);
+        } else {
+            setScrolled(false)
+        }
+    }
+
+    window.addEventListener("scroll",onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+} ,[])
+
+    const onUpdateActiveLink = (x) => {
+        setActiveLink(x);
+    }
+    return (
+        <Navbar expand="lg" className={scrolled ?  "scrolled": ""}>
+        <Container>
+          <Navbar.Brand href="#body">AA</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              
+              <Nav.Link href="#about" className = {activeLink === 'Body' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('body')}>About Me</Nav.Link>
+              <Nav.Link href="#skills" className = {activeLink === 'Skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#projects" className = {activeLink === 'Project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#footer" className = {activeLink === 'Footer' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('footer')}>Connect</Nav.Link>
+              
+            </Nav>
+
+            <span className="navbar-text">
+                <div className = "social-icon">
+                    <a href = "https://www.linkedin.com/in/adilahmed96/" target = "_blank" rel = "nonrefferer" className = "icon-link"><i><FaLinkedin /></i></a>
+                    <a href = "https://github.com/aahmed96" target = "_blank" rel = "nonrefferer" className = "icon-link"><i><FaGithub /></i></a>
+                </div>
+
+                <button className="vvd" onClick={() => console.log('connect')}><span>Hit me up! </span></button>
+
+            </span>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     )
 }
 
