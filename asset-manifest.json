@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bf263c2f.css",
+    "main.js": "/portfolio/static/js/main.ea536032.js",
+    "static/js/787.bbe01249.chunk.js": "/portfolio/static/js/787.bbe01249.chunk.js",
+    "static/media/Profile-Pic.JPG": "/portfolio/static/media/Profile-Pic.4040b66eea1255122bad.JPG",
+    "static/media/covid-tracker.png": "/portfolio/static/media/covid-tracker.a6840f68c0233b51e0f5.png",
+    "static/media/time-series.gif": "/portfolio/static/media/time-series.03593b0bc31f57f06d77.gif",
+    "static/media/euro-2020.jpg": "/portfolio/static/media/euro-2020.33a777f2b3cd2733189e.jpg",
+    "static/media/drum_classifier.jpeg": "/portfolio/static/media/drum_classifier.aa1b64b4c88329bd694f.jpeg",
+    "static/media/portfolio-background.jpg": "/portfolio/static/media/portfolio-background.7babab0448498d4553a4.jpg",
+    "static/media/nyu-logo-full.png": "/portfolio/static/media/nyu-logo-full.58625b4551f983160e84.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.c84d2fad7bc0817ff762.pdf",
+    "static/media/trinity-logo.png": "/portfolio/static/media/trinity-logo.d967380c3a6d3ddfa961.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.bf263c2f.css.map": "/portfolio/static/css/main.bf263c2f.css.map",
+    "main.ea536032.js.map": "/portfolio/static/js/main.ea536032.js.map",
+    "787.bbe01249.chunk.js.map": "/portfolio/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf263c2f.css",
+    "static/js/main.ea536032.js"
+  ]
+}
