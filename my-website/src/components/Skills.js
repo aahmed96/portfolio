@@ -1,7 +1,32 @@
-import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaDocker } from "react-icons/fa";
-
+import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaDocker, FaPython, FaPytorch } from "react-icons/fa";
+import { SiPytorch, SiTensorflow, SiPostgresql, SiDjango, SiMysql, SiMicrosoftazure, SiSwift } from "react-icons/si";
+import { Container, Row, Col} from "react-bootstrap";
 function Skills () {
     const skillsArr = [
+        {
+            "name" : "Python",
+            "icon" : FaPython
+        },
+        {
+            "name" : "Pytorch",
+            "icon" : SiPytorch
+        },
+        {
+            "name" : "Tensorflow",
+            "icon" : SiTensorflow
+        },
+        {
+            "name" : "Django",
+            "icon" : SiDjango
+        },
+        {
+            "name" : "Azure",
+            "icon" : SiMicrosoftazure
+        },
+        {
+            "name" : "Swift",
+            "icon" : SiSwift
+        },
         {
             "name" : 'JavaScript',
             "icon" : FaJs
@@ -23,15 +48,22 @@ function Skills () {
             "icon" : FaReact
         },
         {
-            "name" : "Docker",
-            "icon" : FaDocker
-        }
+            "name" : "SQL",
+            "icon" : SiMysql
+        },
+        
     ];
     
     return (
-        <div id = 'skills' className = 'skills'>
+        <section id="skills" className="skills-new">
+        <Container>
+            <Row className='align-items-center'>
             <h3 className = 'title'> Skills </h3>
+            </Row>
+            <Row className='align-items-center'>
+            
             <div className = 'skill-holder'>
+                
                 {
                     skillsArr.map((skill, index) => {
                         const Icon = skill.icon;
@@ -46,8 +78,13 @@ function Skills () {
                         )
                     })
                 }
+            
             </div>
-        </div>
+            
+            
+            </Row>
+        </Container>
+        </section>
 
     )
 }

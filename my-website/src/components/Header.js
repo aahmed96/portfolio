@@ -2,6 +2,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { useState, useEffect } from "react";
+import Resume from "../assets/Resume.pdf"
 
 //we create a useState function to highlight what page we are on! 
 
@@ -30,7 +31,12 @@ function Header () {
     return (
         <Navbar expand="lg" className={scrolled ?  "scrolled": ""}>
         <Container>
-          <Navbar.Brand href="#body">AA</Navbar.Brand>
+          <Navbar.Brand href="#body">
+          <a className="first" >A</a>
+          <a className="second">A</a>
+          
+          </Navbar.Brand>
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -48,7 +54,7 @@ function Header () {
                     <a href = "https://github.com/aahmed96" target = "_blank" rel = "nonrefferer" className = "icon-link"><i><FaGithub /></i></a>
                 </div>
 
-                <button className="vvd" onClick={() => console.log('connect')}><span>Hit me up! </span></button>
+                <button className="vvd" onClick={() => window.open(Resume, '_blank', 'noopener,noreferrer')}><span>My Resume </span></button>
 
             </span>
           </Navbar.Collapse>

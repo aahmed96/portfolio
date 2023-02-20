@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { FaGithub } from "react-icons/fa";
 
 function ProjectCard(cards) {
     return (
@@ -8,7 +9,7 @@ function ProjectCard(cards) {
                 <Card.Body>
                     <Card.Title className="project-title">{cards.title}</Card.Title>
                             <Card.Text className="project-desc">{cards.description}</Card.Text>
-                                <Button href= {cards.url} variant="primary">Gitub</Button>
+                                <a href= {cards.url} target="_blank" className="card-link"><FaGithub className="git-icon" /></a>
                 </Card.Body>
         </Card>
     )

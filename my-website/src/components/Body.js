@@ -51,7 +51,7 @@ function Body () {
             <Container>
                 <Row className="align-items-center">
                     <Col xs = {12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my World</span>
+                        <span className="tagline">Adil Ahmed</span>
                         <h1>Hey! I'm a <span className="wrap">{text}</span></h1>
                         <p>I am a highly enthusiastic and motivated Data Scientist with a passion for deep learning & machine learning. I received my MSc from NYU, where I developed a solid foundation in AI & ML technologies. I have hands-on experience working as a software engineer in a data-focused consultancy, and have a track record of delivering end-to-end machine learning solutions for clients across the apparel, cosmetic and pharmaceutical industries. </p>
                     </Col>
