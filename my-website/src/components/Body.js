@@ -10,7 +10,7 @@ function Body () {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Developer", "Machine Learning Engineer", "Data Scientist", "Music Producer" ];
+  const toRotate = [ "Data Scientist", "ML Engineer", "Software Developer", "Music Producer" ];
   const period = 2000;
 
   useEffect(() => {
