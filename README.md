@@ -4,11 +4,8 @@ My personal website built using React
 # Things to add
 
 1. Projects
-  a. NYU Projects
-  b. Covid-19 Website
-  c. Timeseries Framework
-  d. Medical Website (need to make this first)
-  e. Euro 2020 prediction game 
+  a. Medical Website (need to make this first)
+ 
   
 2. Music Production - have small clips of your music play
 
